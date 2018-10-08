@@ -20,7 +20,8 @@ app.use(express.static(__dirname + '/'));
 
 app.get('/', (req, res) => {
   res.render('home.hbs', {
-		pageTitle: 'Home Page'
+		pageTitle: 'KY Radio',
+    subTitle: '~ Home ~'
 	});
 });
 
@@ -33,12 +34,12 @@ app.get('/youtube-irc/:id', (req, res) => {
     var id = req.params.id;
     if (id === 'anime-live-irc-1') {
         res.render('yt-player.hbs', {
-            vidTitle: "Kawaii Anime Music Live",
+            vidTitle: "Kawaii Anime Music Live IRC",
             vidurl: "https://www.youtube.com/embed/PRlAY486hVg?rel=0&amp;showinfo=0"
         });
     } else if (id === 'anime-live-irc-2') {
         res.render('yt-player.hbs', {
-            vidTitle: "Anime Music Live",
+            vidTitle: "Anime Music Live IRC",
             vidurl: "https://www.youtube.com/embed/hWYRTIo6enA?rel=0&amp;showinfo=0"
         });
     }
