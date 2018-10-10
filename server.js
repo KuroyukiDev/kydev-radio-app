@@ -40,7 +40,7 @@ app.get('/youtube-irc/:id', (req, res) => {
     } else if (id === 'anime-live-irc-2') {
         res.render('yt-player.hbs', {
             vidTitle: "Anime Music Live IRC",
-            vidurl: "https://www.youtube.com/embed/hWYRTIo6enA?rel=0&amp;showinfo=0"
+            vidurl: "https://www.youtube.com/embed/BgZ7hJore2w?rel=0&amp;showinfo=0"
         });
     }
 });
